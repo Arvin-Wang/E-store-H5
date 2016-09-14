@@ -1,0 +1,205 @@
+body{font-family: Arial,'Microsoft YaHei'}
+body,html{width: 100%;height: 100%;background-color: #f3f3f4;}
+body,div,header,.title,.main,.main-1,.main-1-name,.main-1-input,input,.main-1-input,.main-1-name,
+.main-2-input,label,label.checked,footer,div,.main3,.main4,#input1,#input2,.judge_img,.judge_word{margin: 0;padding: 0}
+header{
+	background-color: black;
+	opacity: 0.8;
+	position: fixed;
+	text-align: center;
+	font-size: 18px;
+	height: 70px;
+	width: 100%;
+	color: white;
+	min-width: 680px;
+}
+input{font-size: 18px;font-family: arial,'Microsoft YaHei';padding-left: 10px;}
+header a{
+	text-decoration: none;
+	color: white;
+}
+.h1{
+	width: 256px;
+	height: auto;
+	margin: 0;
+	padding:24.5px 0px 0px 108px;
+	float: left;
+}
+.h2{
+	width: auto;
+	height: auto;
+	margin: 0;
+	margin-top: 35px;
+	float: left;
+}
+.h3{
+	float: right;
+	padding:24.5px 72px 0px 0px;
+}
+.title{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 110px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+.main{
+	width: 600px;
+	height: 332px;
+	color: black;
+	background-color: white;
+	margin: 36px auto;
+	font-size: 18px;
+    padding-top: 50px;
+}
+#maincn{
+	height: 507px;
+}
+.main-1{
+	height: 40px;
+	width: 600px;
+	margin-bottom: 20px;
+}
+.main-1-name{
+	width: 182px;
+	float: left;
+	text-align: right;
+	height: 40px;
+	padding-top: 9.5px;
+}
+.main-1-input{
+	width: 380px;
+	height: auto;
+	float: right;
+}
+.main-1-input input{
+	width: 300px;
+	height: 38px;
+	border-radius: 3px;
+	border: 1px solid grey;
+	text-decoration: none;
+}
+
+.main-1-input select{
+	width: 312px;
+	height: 40px;
+	padding-left: 10px;
+	border-radius: 3px;
+	border: 1px solid grey;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: arial,'Microsoft YaHei';
+}
+.main-2-input {
+	width: 198px;
+	height: auto;
+	float: right;
+}
+.main-2-input input{
+	width: 120px;
+	height: 38px;
+	border-radius: 3px;
+	background-color: #00b494;
+	border: none;
+	text-decoration: none;
+	color: white;
+	float: left;
+}
+.main-3-input{
+	width: 380px;
+	height: auto;
+	float: right;
+	padding-top: 6px;
+}
+.main-3-input image{float: bottom;}
+footer{
+	width: 100%;
+	bottom: 3%;
+	position: absolute;
+}
+footer div{
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+}
+.f2{
+	padding-top: 10px;
+}
+.l1{padding-right: 50px;}
+.main-3-input img{
+    padding-left: 15px;
+}
+
+/*cn input*/
+#input1{
+	width: 158px;
+	margin-right: 20px;
+}
+#input2{
+	width: 108px;
+}
+#input1,#input2{
+	padding-left: 10px;
+}
+#mainright{background-color: #f3f3f4}
+.judge_img{
+	width: 44px;
+	height: 100%;
+	float: left;
+}
+.judge_word{
+	width: 306px;
+	height: auto;
+	float: right;
+	margin: 5px 0;
+}
+.judge_word2{
+	width: 306px;
+	height: auto;
+	float: right;
+	margin: 30px 0 58px 0;
+	font-weight: bold;
+}
+.judge_word input{
+	width: 120px;
+	height: 38px;
+	border-radius: 3px;
+	background-color: #00b494;
+	border: none;
+	text-decoration: none;
+	padding-left: 0;
+	color: white;
+	float: left;
+}
+#mainright{
+	width: 390px;
+}
+.judge_wordw{
+	width: 200px;
+	height: auto;
+	float: right;
+	margin: 5px 0;
+}
+.judge_wordw input{
+	width: 120px;
+	height: 38px;
+	margin-top: 58px;
+	border-radius: 3px;
+	background-color: #00b494;
+	border: none;
+	text-decoration: none;
+	padding-left: 0;
+	color: white;
+	float: left;
+}
+#mainwrong{
+	width: 284px;
+	background-color: #f3f3f4
+}
+footer a{
+	text-decoration: none;
+	color: black
+}

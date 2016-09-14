@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AllPay E-Store</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="AllPay,偶可贝,跨境支付,跨境电商,微信跨境支付,支付宝跨境支付,支付网关,跨境收款,跨境付款,银联支付，俄罗斯收款,巴西收款，德国收款,荷兰收款,
+	关键词,银联在线支付 API,银联支付 API,银联在线支付 SDK,银联支付 SDK,银联在线支付 接口,银联支付接口,跨境移动支付,跨境支付接口,在线支付API接口,移动支付SDK包,跨境银联支付,APP支付,聚合支付,银联在线,移动支付跨境,移动跨境支付,微信跨境支付,一站式支付,偶可贝,AllPay,Apple Pay在线支付,Apple Pay支付,国际支付平台,跨境支付平台,跨境人民币支付,跨境人民币结算,跨境支付,境外支付,跨境电商支付,银联跨境支付,电商支付,公众号支付,银联网上支付,网上银联支付
+	Alipay,UnionPay,Wechat pay,UnionPay Online,Tenpay,China payment,Cross border payment China,Wexin Pay,China international payment,China payment gateway,Chinese payment gateway,Chinese payment,Pay from China,China pay,China remittance,Remittance China,B2B RMB Settlement,Wechat pay API SDK,UnionPay API SDK,Alipay API SDK,B2B CNY Settlement, Apple Pay China, Apple Pay Chinese, RMB settlement, CNY pay, CNY settlement, UnionPay API, China payment API" />
+	<meta name="description" content="AllPay致力于为全球各地的本地和跨境企业、电商提供安全、快捷、稳定的一站式跨境支付和结算服务！" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11,IE=edge" >
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/forall.css">
+	<link rel="stylesheet" type="text/css" href="css/green.css">
+	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="js/icheck.js"></script>
+	<script type="text/javascript" src="js/base64.js"></script>
+	<script type="text/javascript" src="js/estorecn.js"></script>
+	<script type="text/javascript" src="js/sha256.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script>		
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+		var param=GetQueryString('param')
+		var value = utf8to16(base64decode(param))
+		var responseJson=JSON.parse(value);
+
+	</script>
+</head>
+<body id="body1" onresize="discn()">
+<header>
+	<div class="h1"><img src="image/logo.png"></div>
+	<div class="h2" id='merName'>Merchant name</div>
+	<!-- <div class="h3"><a href="">Sign Out</a></div> -->
+</header>
+<div class="title">AllPay E-Store Online Payment System V1.0</div>
+<div class="main" id="maincn">
+<form>
+    <div class="main-1">
+		<div class="main-1-name">商户号</div>
+		<div class="main-1-input"><input type="text" name="merchantId" id="merchantId" readonly></div>
+	</div>
+	<div class="main-1">
+		<div class="main-1-name">保单编号</div>
+		<div class="main-1-input"><input type="text" name=""></div>
+	</div>
+	
+	<div class="main-1">
+		<div class="main-1-name">保单金额</div>
+		<div class="main-1-input"><input type="text" name="" id="policymoney" onkeyup="this.value=this.value.replace(/[^0-9\.]/g,'')" onblur="judge()" 
+		></div>
+	</div>
+	<div class="main-1">
+		<div class="main-1-name">手续费</div>
+		<div class="main-1-input"><input type="text" name="" id="poundage" readonly></div>
+	</div>
+	<div class="main-1">
+		<div class="main-1-name">订单总额</div>
+		<div class="main-1-input"><input type="text" name="" id="allmoney" readonly></div>
+	</div>
+	<div class="main-1">
+		<div class="main-1-name">支付币种</div>
+		<div class="main-1-input">
+		<select id="select1">
+		</select>
+		</div>
+	</div>
+
+	<div class="main-1">
+		<div class="main-1-name">支付方式</div>
+		<div class="main-3-input">
+			<input type="radio" name="iCheck" checked value="UP">
+			<label class="l1"><img src="image/2.png"></label>
+			<input type="radio" name="iCheck" value="AP">
+			<label><img src="image/3.png"></label>
+		</div>
+	</div>
+	<div class="main-1">
+		<div class="main-2-input"><input type="button" name="" value="Confirm" onclick="pay()"></div>
+	</div>
+</form>
+</div>
+<footer id="footer">
+	<div><img src="image/1.png"></div>
+	<div class="f2"><a href="http://allpayx.com">Web: www.allpayx.com</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="mailto:sales@allpayx.com">Email: sales@allpayx.com</a></div>
+	<div class="f2">Copyright&nbsp©&nbsp2016&nbspAllPay.&nbspAll rights reserved.</div>
+</footer>
+<script>
+    initData();
+</script>
+</body>
+<script type="text/javascript" src="js/forall.js"></script>
+</html>
